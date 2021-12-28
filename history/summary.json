@@ -5,19 +5,17 @@
     "icon": "https://favicons.githubusercontent.com/earthnetwork.fr",
     "slug": "site-internet",
     "status": "up",
-    "uptime": "0.40%",
-    "uptimeDay": "0.40%",
-    "uptimeWeek": "0.40%",
-    "uptimeMonth": "0.40%",
-    "uptimeYear": "0.40%",
+    "uptime": "100.00%",
+    "uptimeDay": "100.00%",
+    "uptimeWeek": "100.00%",
+    "uptimeMonth": "100.00%",
+    "uptimeYear": "100.00%",
     "time": 373,
     "timeDay": 373,
     "timeWeek": 373,
     "timeMonth": 373,
     "timeYear": 373,
-    "dailyMinutesDown": {
-      "2021-12-28": 14
-    }
+    "dailyMinutesDown": {}
   },
   {
     "name": "Serveur Mail",

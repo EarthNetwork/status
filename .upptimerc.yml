@@ -1,31 +1,91 @@
 # Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+owner: earthnetwork # Your GitHub organization or username, where this repository lives
+repo: status # The name of this repository
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Test Broken Site
-    url: https://thissitedoesnotexist.koj.co
+  - name: Serveur mail
+    url: $SERVEUR_MAIL
+    expectedStatusCodes:
+      - 200
+    
 
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
-  navbar:
-    - title: Status
+    theme: ocean
+    # Add your custom domain name, or remove the `cname` line if you don't have a domain
+    # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
+    cname: status.earthnetwork.fr
+    # baseUrl: /your-repo-name
+    logoUrl: https://media.discordapp.net/attachments/834388832144195594/892752772775153684/logo-removebg.png
+    favicon: https://media.discordapp.net/attachments/834388832144195594/892752772775153684/logo-removebg.png
+    name: Status EarthNetwork
+    introTitle: "Status actuel de nos services"
+    introMessage: Actualisé toutes les 5 minutes
+    navbar:
+    - title: Accueil
       href: /
-    - title: GitHub
-      href: https://github.com/$OWNER/$REPO
+    - title: Site Internet
+      href: https://earthnetwork.fr
 
 # Upptime also supports notifications, assigning issues, and more
 # See https://upptime.js.org/docs/configuration
+
+i18n:
+  footer: Propulsé par [Upptime](https://upptime.js.org)
+  activeIncidents: Incidents Actifs
+  allSystemsOperational: Tous les services sont opérationnels
+  incidentReport: "Rapport de l'incident #$NUMBER →"
+  activeIncidentSummary: Ouvert le $DATE avec $POSTS posts
+  incidentTitle: Incident #$NUMBER
+  incidentDetails: "Details de l'incident"
+  incidentFixed: résolu
+  incidentOngoing: en couts
+  incidentOpenedAt: Ouvert le
+  incidentClosedAt: Fermé le
+  incidentSubscribe: "S'abonner aux mises à jour"
+  incidentViewOnGitHub: Voir sur GitHub
+  incidentCommentSummary: Posté le $DATE par $AUTHOR
+  incidentBack: ← Retour vers la liste globale
+  pastIncidents: Incidents précédents
+  pastIncidentsResolved: Résolu en $MINUTES minutes avec $POSTS posts
+  liveStatus: Status Actuel
+  overallUptime: "Uptime global: $UPTIME"
+  overallUptimeTitle: Uptime Global
+  averageResponseTime: "Temps de réponse moyen: $TIMEms"
+  averageResponseTimeTitle: Temps de réponse moyen
+  sevelDayResponseTime: Temps de réponse moyen sur 7 jours
+  responseTimeMs: Temps de réponse (ms)
+  up: Up
+  down: Down
+  degraded: Dégradé
+  ms: ms
+  loading: Chargement
+  navGitHub: GitHub
+  rateLimitExceededTitle: Rate limit
+  rateLimitExceededIntro: Vous avez effectué trop de requêtes et vous ne pouvez plus accéder à ce site.
+  rateLimitExceededWhatDoesErrorMean: C'est quoi cette erreur?
+  rateLimitExceededErrorMeaning: Ce site utilise l'api GitHub pour accéder aux données en temps réelle. GitHub autorise par défaut 60 requêtes par heure et par IP, mais vous avez dépassé le quota.
+  rateLimitExceededErrorHowCanFix: Comment corriger?
+  rateLimitExceededErrorFix: Attendez une heure, le temps que GitHub remette à 0 votre quota. Vous pouvez aussi utiliser un token GitHub pour avoir 1000 requêtes par heure.
+  rateLimitExceededGeneratePAT: Comment en obtenir un?
+  rateLimitExceededHasSet: Le token a été enregistré
+  rateLimitExceededRemoveToken: Supprimer le token
+  rateLimitExceededGitHubPAT: GitHub Personal Access Token
+  rateLimitExceededCopyPastePAT: Copiez et coller le token
+  rateLimitExceededSaveToken: Sauvegarder le token
+  errorTitle: Erreur inconnue
+  errorIntro: Une erreur s'est produite en voulant récupérer les dernières données
+  errorText: Réessayez dans quelques minutes
+  errorHome: Retourner à l'accueil
+  pastScheduledMaintenance: Maintenances planifiées précédentes
+  scheduledMaintenance: Maintenance planifiée
+  scheduledMaintenanceSummaryStarted: Démarée à $DATE pour $DURATION minutes
+  scheduledMaintenanceSummaryStarts: Commence à $DATE pour $DURATION minutes
+  startedAt: Démarée à
+  startsAt: Commencée à
+  duration: Durée
+  durationMin: $DURATION minutes
+  incidentCompleted: Terminé
+  incidentScheduled: Planifié
+
+workflowSchedule:
+  responseTime: "*/5 * * * *"

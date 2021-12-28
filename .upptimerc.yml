@@ -9,6 +9,7 @@ sites:
       - 200
       - 301
       - 302
+      - 403
   - name: Serveur Mail
     url: $SERVEUR_MAIL
     expectedStatusCodes:

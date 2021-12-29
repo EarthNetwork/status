@@ -10,11 +10,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 651,
-    "timeDay": 651,
-    "timeWeek": 651,
-    "timeMonth": 651,
-    "timeYear": 651,
+    "time": 649,
+    "timeDay": 649,
+    "timeWeek": 649,
+    "timeMonth": 649,
+    "timeYear": 649,
     "dailyMinutesDown": {}
   },
   {
@@ -23,18 +23,18 @@
     "icon": "https://favicons.githubusercontent.com/null",
     "slug": "serveur-mail",
     "status": "down",
-    "uptime": "99.99%",
-    "uptimeDay": "99.99%",
-    "uptimeWeek": "99.99%",
-    "uptimeMonth": "99.99%",
-    "uptimeYear": "99.99%",
+    "uptime": "97.69%",
+    "uptimeDay": "97.69%",
+    "uptimeWeek": "97.69%",
+    "uptimeMonth": "97.69%",
+    "uptimeYear": "97.69%",
     "time": 709,
     "timeDay": 709,
     "timeWeek": 709,
     "timeMonth": 709,
     "timeYear": 709,
     "dailyMinutesDown": {
-      "2021-12-29": 0
+      "2021-12-29": 18
     }
   }
 ]

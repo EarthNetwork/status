@@ -13,8 +13,14 @@ sites:
   - name: Serveur Mail
     url: $SERVEUR_MAIL
     expectedStatusCodes:
-      - 200
-    
+      - 200  
+  - name: Serveur votes
+    check: "tcp-ping"
+    url: $VPS
+    port: $VOTES
+    expectedStatusCodes:
+      - 200 
+
 
 status-website:
     theme: ocean

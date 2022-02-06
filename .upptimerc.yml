@@ -20,6 +20,10 @@ sites:
     check: "tcp-ping"
     url: $VPS
     port: $VOTES
+  - name: Proxy Waterfall (bungee)
+    check: "tcp-ping"
+    url: $VPS
+    port: $PROXY
 
 
 status-website:

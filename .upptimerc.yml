@@ -14,6 +14,8 @@ sites:
     url: $SERVEUR_MAIL
     expectedStatusCodes:
       - 200  
+      - 301
+      - 302
   - name: Serveur votes
     check: "tcp-ping"
     url: $VPS

@@ -1,0 +1,24 @@
+on:
+  issues:
+    types:
+      - closed
+jobs:
+  discord:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup Node
+        uses: actions/setup-node@master
+        with:
+          node-version: '16'
+      - name: Clonage du script
+        uses: actions/checkout@master
+        with:
+          repository: https://github.com/EarthNetwork/discord-status-webhook
+      - name: Installation des deps
+        run: npm ci
+      - name: Exécution du script
+        run: node .
+        env:
+          issueTitle: ${{ github.event.issue.title }}
+          discordUrl: ${{ secrets.discordUrl }}
+          back: true

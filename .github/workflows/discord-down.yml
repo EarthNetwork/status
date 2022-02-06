@@ -13,7 +13,7 @@ jobs:
       - name: Clonage du script
         uses: actions/checkout@master
         with:
-          repository: https://github.com/EarthNetwork/discord-status-webhook
+          repository: EarthNetwork/discord-status-webhook
       - name: Installation des deps
         run: npm ci
       - name: Exécution du script

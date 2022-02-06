@@ -18,8 +18,6 @@ sites:
     check: "tcp-ping"
     url: $VPS
     port: $VOTES
-    expectedStatusCodes:
-      - 200 
 
 
 status-website:

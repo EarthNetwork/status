@@ -15,7 +15,7 @@ jobs:
         with:
           repository: EarthNetwork/discord-status-webhook
       - name: Installation des deps
-        run: npm ci
+        run: npm i
       - name: Exécution du script
         run: node .
         env:
